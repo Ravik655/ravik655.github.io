@@ -12,7 +12,7 @@
 body {
 
     background-color: rgba(234, 231, 231, 0.635);
-    text-align: center;
+    /* text-align: center; */
 }
 
 a {
@@ -671,6 +671,9 @@ input[type=checkbox] {
 @media (max-width:525px) {
     .info {
         flex-direction: column;
+    }
+    body{
+        width: 127%;
     }
 
     .navbar {
