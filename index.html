@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolip</title>
+    <link rel="shortcut icon" href="./image/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -16,7 +17,12 @@
 
     <nav class="navbar">
         <!-- LOGO -->
-        <div class="logo"><img src="./image/logo.png" height="50px" width="50px" alt=""></div>
+        <div class="logo"><img src="./image/logo.png" height="50px" width="50px" alt="">
+            <div class="detail">
+            <p><i class="fa-solid fa-phone"></i> Email id:-araviks655@gmail.com</p>
+            <p><i class="fa-solid fa-envelope"></i> Phone no.:-9355750655</p>
+            </div>
+        </div>
         <!-- NAVIGATION MENU -->
         <ul class="nav-links">
             <!-- USING CHECKBOX HACK -->
@@ -25,10 +31,10 @@
             <!-- NAVIGATION MENUS -->
             <div class="menu">
                 <li><a href="#">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">services</a> </li>
-                <li><a href="/">Project</a></li>
-                <li><a href="./">Contact</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#service">Services</a> </li>
+                <li><a href="#Portfolio">Project</a></li>
+                <li><a href=".#Contact">Contact</a></li>
             </div>
         </ul>
     </nav>
@@ -38,8 +44,7 @@
 
 
 
-
-    <div id="container" class="cont">
+ <div id="container" class="cont">
         <div class="text">
             <div data-aos="fade-down-right">
                 <p>Hello...it's Me</p>
@@ -88,18 +93,20 @@
 
 
 
-
+ 
 
 
     <section class="About" id="About">
         <div class="About_img">
-            <div data-aos="zoom-out-up">
-                <img src="./image/ravi 1.jpg" alt="" height="auto" width="80%">
+            <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                <img src="./image/ravi 1.jpg" alt="" height="auto" width="100%">
             </div>
-
         </div>
+
+
         <div class="about_box">
-            <div data-aos="fade-up-left">
+            <div data-aos="fade-right" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500">
+
                 <h2 class="head"> About <span>Me</span></h2>
                 <p>Hi. I am Ravi Kumar Singh. I have graduated from college with a degree in B.A.
                     I am an fresher in developer. My problem-solving skills are a positive factor.
@@ -107,6 +114,7 @@
                     role. I have a good understanding of HTML, CSS, JavaScript, and . I am currently improving
                     my development skills by learning various new technologies.</p>
             </div>
+
             <br>
             <section class="per">
                 <div data-aos="fade-down-right">
@@ -139,8 +147,8 @@
                                         style="position: absolute;background-color: black; width:55%; height:20px; color: white; text-align: center;">
                                         60%</div>
 
+                                </div> -->
             </section>
-        </div>
         </div>
     </section>
 
@@ -168,9 +176,9 @@
                 </div>
             </div>
 
-            <div data-aos="flip-up">
-                <div data-aos="flip-right">
-
+            
+            
+            <div data-aos="flip-left">
                     <div class="service_box">
                         <i class="fa-solid fa-code"></i>
                         <h3>JAVASCRIPT</h3>
@@ -178,7 +186,8 @@
                         <a href="" class="btn">Read More</a>
                     </div>
                 </div>
-            </div>
+        
+        </div>
     </section>
 
 
@@ -196,7 +205,7 @@
                 </div>
             </div>
 
-            <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+             <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
                 <div class="portfolio_box">
                     <a href="templete1/index.html" target="_blank"> <img src="./image/architect.jpg" alt="">
                         <div class="portfolio_layer">
@@ -218,7 +227,7 @@
                     </a>
                 </div>
             </div>
-            <div data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500">
+            <!-- <div data-aos="fade-right" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500"> -->
                 <div class="portfolio_box">
                     <a href="fashion_blog/text.html" target="_blank"><img src="./image/jane.jpg" alt="">
                         <div class="portfolio_layer">
@@ -229,8 +238,8 @@
                         </div>
                     </a>
                 </div>
-            </div>
-            <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
+            <!-- </div> -->
+           <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
                 <div class="portfolio_box">
                     <a href="mobirise/index.html" target="_blank"><img src="./image/sl7.jpg" alt="">
                         <div class="portfolio_layer">
@@ -260,7 +269,10 @@
     <section class="Contact" id="Contact">
         <h2>Contact <span>Me!</span></h2>
         <form action="#" class="form">
-            <div data-aos="fade-up" data-aos-anchor-placement="center-center">
+            <!-- <div data-aos="fade-up" data-aos-anchor-placement="center-center"> -->
+                <div data-aos="fade-up"
+     data-aos-anchor-placement="center-center">
+
                 <div class="contact_container">
                     <div class="contact_box">
                         <input type="text" name="name" placeholder="Enter your Name">
@@ -271,9 +283,9 @@
                         <input type="text" placeholder="Enter Subject">
                     </div>
                     <div class="contact_box">
-                        <!-- <textarea name="" id="textarea" cols="60" rows="10" placeholder="write message"
-                            style=" background-color:black;"></textarea> -->
-                        <input type="text" name="" id="mess" placeholder=" write message">
+                        <textarea name="" id="textarea" cols="100" rows="10" placeholder="write message"
+                            style=" background-color:rgb(166, 164, 164);"></textarea>
+                        <!-- <input type="text" name="" id="mess" placeholder=" write message"> -->
                     </div>
                     <br>
                     <input type="submit" class="btn">
@@ -281,8 +293,8 @@
             </div>
         </form>
     </section>
-        
-    
+
+
 
 
     <div data-aos="fade-up" data-aos-anchor-placement="top-center">

@@ -11,7 +11,8 @@
 
 body {
 
-    background-color: rgba(234, 231, 231, 0.635);
+    background-color:rgb(89, 209, 171)
+
     /* text-align: center; */
 }
 
@@ -28,8 +29,8 @@ li {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px;
-    background-color: rgb(69, 247, 143);
+    padding: 12px;
+    background-color: rgb(2, 87, 38);
     color: #fff;
 }
 
@@ -39,7 +40,11 @@ li {
 
 /* LOGO */
 .logo {
+    display: flex;
     font-size: 32px;
+}
+.logo p{
+    font-size:1rem;
 }
 
 /* NAVBAR MENU */
@@ -134,7 +139,7 @@ input[type=checkbox] {
 
 
 #container {
-    min-height: 70vh;
+    min-height:50vh;
     padding: 0rem 5% 2rem;
     position: relative;
     display: flex;
@@ -323,7 +328,7 @@ input[type=checkbox] {
     text-align: left;
     font-size: 2rem;
     font-weight: 700;
-    line-height: 3;
+    line-height:4;
 }
 
 
@@ -341,8 +346,8 @@ input[type=checkbox] {
 }
 
 .About p {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 1rem;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:1rem;
 }
 
 .About_img {
@@ -583,6 +588,7 @@ input[type=checkbox] {
     text-align: center;
     font-size: 2.6rem;
     font-weight: 600;
+    margin-top: 2rem;
 }
 
 .Contact span {
@@ -590,28 +596,29 @@ input[type=checkbox] {
 }
 
 .contact_box input {
-    padding: 10px 5px;
+    padding: 10px 15px;
     margin: 1rem 1rem;
     font-size: 1rem;
     border: none;
-    background: rgb(15, 15, 15);
+    background: rgba(159, 165, 163, 0.998);
     border-radius: 5px;
-    color: white;
+    /* color: rgb(181, 22, 22); */
 }
 
 .contact_box .btn {
     font-size: 1.2rem;
     width: 10rem;
     background-color: aqua;
-    color: black;
+    color: rgb(239, 236, 236);
     border-radius: 15px;
-    margin-bottom: 5rem;
+    /* margin-bottom: 5rem; */
 }
 
-#mess {
-    height: auto;
-    width: 100%;
-    text-align: justify;
+#textarea {
+    height:100%;
+    
+
+
 }
 
 
@@ -673,7 +680,7 @@ input[type=checkbox] {
         flex-direction: column;
     }
     body{
-        width: 127%;
+        width: 100%;
     }
 
     .navbar {
@@ -685,6 +692,9 @@ input[type=checkbox] {
 
     #container {
         margin-top: 3rem;
+    }
+    #textarea{
+        width: 100%;
     }
 
 
@@ -708,12 +718,6 @@ input[type=checkbox] {
         transform: rotate(90deg) translate(-50%, 50%) scaleY(3);
         border-width: 23.9rem;
     }
-
-    #mess {
-        height: 40px;
-        width: 100%
-    }
-
 
 
     .footer_box {
@@ -764,11 +768,6 @@ input[type=checkbox] {
         justify-content: center;
     }
 
-    #mess {
-        height: 150px;
-        width: 60%
-    }
-
     .portfolio_container {
         grid-template-columns: auto auto;
     }
@@ -814,74 +813,39 @@ input[type=checkbox] {
 
     }
 
-    #mess {
-        height: 200px;
-        width: 60%
-    }
-
 
 }
-
-@media (max-width:2000px) {
-    #mess {
-        height: 200px;
-        width: 60%
-    }
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @media only screen and (min-width:826px) and (max-width:1427px) {
     .section {
         top: 0%;
         transform: rotate(0deg);
         height: 850px;
-
+        
     }
-
+    
     .text {
         text-align: center;
         margin-right: 10rem;
     }
-
-
+    
+    
     .About {
-        margin-top: 48rem;
+        gap: 3rem;
     }
-
-
+    
+    
     .cont {
         justify-content: center;
     }
-
+    
     #container {
         display: block;
-
+        
     }
-
-
-
+    
+    
+    
 }
 
 @media only screen and (min-width:1428px) and (max-width:2000px) {
@@ -890,11 +854,11 @@ input[type=checkbox] {
         /* flex-direction: column; */
         transform: rotate(0deg);
         height: 850px;
-
+        
     }
-
     .About {
-        margin-top: 35rem;
+        margin-top:30rem;
+        gap:3rem;
     }
 
 
