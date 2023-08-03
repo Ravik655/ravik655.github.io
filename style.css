@@ -352,14 +352,16 @@ input[type=checkbox] {
 }
 
 .About_img {
-    width: 100%;
+    width:70%;
+    margin: auto;
 
 
     /* background: transparent; */
 }
 
 .about_box {
-    width: 100%;
+    width: 70%;
+    margin: auto;
     text-align: justify;
 
 
@@ -774,18 +776,13 @@ input[type=checkbox] {
 
     }
     .About{
-        max-width: 90%;
-        gap:2gitpx;
+        gap:2rem;
     }
-
-    .About_img img {
-        height: 450px;
-        width:280px;
-        gap: 2rem;
-    }
+   
 
     .about_box {
-        width: 350px;
+        width:70%;
+        margin: auto;
 
     }
 
@@ -802,6 +799,9 @@ input[type=checkbox] {
     .Portfolio h3 {
         font-size: 1.3rem;
     }
+    #textarea{
+        width:70%;
+    }
 }
 
 @media only screen and (min-width:826px) and (max-width:1200px) {
@@ -809,11 +809,16 @@ input[type=checkbox] {
         display: none;
 
     }
-
-
-}
-
-@media only screen and (min-width:826px) and (max-width:1428px) {
+    .About {
+        margin-top:2rem;
+        gap: 3rem;
+    }
+     
+    .cont {
+        justify-content: center;
+    }
+    
+  
     .section {
         top: 0%;
         transform: rotate(0deg);
@@ -823,13 +828,36 @@ input[type=checkbox] {
     
     .text {
         text-align: center;
-        margin-right: 10rem;
+        /* margin-right: 10rem; */
+    }
+
+    
+    
+    
+
+
+}
+
+@media only screen and (min-width:1201px) and (max-width:1428px) {
+    .section {
+        top: 0%;
+        transform: rotate(0deg);
+        height: 850px;
+        
+    }
+    
+    .text {
+        text-align: center;
+        padding-top:15rem;
     }
     
     
     .About {
-        margin-top:25rem;
+        margin-top:37rem;
         gap: 3rem;
+    }
+    .About_img  img{
+        height:440px;
     }
     
     
@@ -839,6 +867,9 @@ input[type=checkbox] {
     
     #container {
         display: block;
+        margin-left: -7rem;
+
+        
         
     }
     
@@ -857,6 +888,10 @@ input[type=checkbox] {
     .About {
         margin-top:30rem;
         gap:3rem;
+    }
+    .text {
+        text-align: center;
+        padding-top:15rem;
     }
 
 
