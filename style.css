@@ -341,6 +341,7 @@ input[type=checkbox] {
     margin: auto;
     text-align: center;
     /* margin-top:5rem; */
+    height:500px;
 
 
 
@@ -853,11 +854,12 @@ input[type=checkbox] {
     
     
     .About {
-        margin-top:37rem;
-        gap: 3rem;
+        margin-top:25rem;
+        gap:2rem;
     }
     .About_img  img{
         height:440px;
+        width:70%;
     }
     
     
@@ -886,13 +888,18 @@ input[type=checkbox] {
         
     }
     .About {
-        margin-top:30rem;
+        margin-top:20rem;
         gap:3rem;
     }
     .text {
         text-align: center;
         padding-top:15rem;
     }
+    .About_img  img{
+        height:440px;
+        width:70%;
+    }
+    
 
 
 }
