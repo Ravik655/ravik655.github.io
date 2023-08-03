@@ -683,7 +683,7 @@ input[type=checkbox] {
     .logo .detail p{
         font-size:12px;
         text-align: justify;
-        padding-top: 10px;
+        margin-top: 13px;
         
     }
 
@@ -813,7 +813,7 @@ input[type=checkbox] {
 
 }
 
-@media only screen and (min-width:826px) and (max-width:1427px) {
+@media only screen and (min-width:826px) and (max-width:1428px) {
     .section {
         top: 0%;
         transform: rotate(0deg);
@@ -828,6 +828,7 @@ input[type=checkbox] {
     
     
     .About {
+        margin-top:25rem;
         gap: 3rem;
     }
     
@@ -854,7 +855,7 @@ input[type=checkbox] {
         
     }
     .About {
-        margin-top:30rem;
+        margin-top:25rem;
         gap:3rem;
     }
 
