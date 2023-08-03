@@ -736,7 +736,7 @@ input[type=checkbox] {
 
     .About {
         flex-direction: column;
-        margin-top: 5rem;
+        margin-top:3rem;
     }
 
     .section {
@@ -775,7 +775,7 @@ input[type=checkbox] {
     }
     .About{
         max-width: 90%;
-        gap: 10px;
+        gap:2gitpx;
     }
 
     .About_img img {
@@ -828,7 +828,7 @@ input[type=checkbox] {
     
     
     .About {
-        margin-top:25rem;
+        margin-top:5rem;
         gap: 3rem;
     }
     
