@@ -10,11 +10,16 @@
 
 
 body {
+    background: url(./image/video.mp4);
+    background-size: cover;
 
-    background-color:rgb(89, 209, 171)
-
-    /* text-align: center; */
 }
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+    
 
 a {
     text-decoration: none;
@@ -30,7 +35,7 @@ li {
     align-items: center;
     justify-content: space-between;
     padding: 12px;
-    background-color: rgb(2, 87, 38);
+    background-color: rgba(52, 52, 166, 0.521);
     color: #fff;
 
 }
@@ -99,12 +104,13 @@ input[type=checkbox] {
     .menu {
         display: none;
         position: absolute;
-        background-color: rgb(36, 100, 56);
+        background-color: rgb(80, 142, 82);
         right: 0;
         left: 0;
         text-align: center;
         padding: 16px 0;
         z-index: 100;
+        
     }
 
     .menu li:hover {
@@ -113,8 +119,9 @@ input[type=checkbox] {
         transition: 0.3s ease;
     }
 
-    .menu li+li {
+    .menu li {
         margin-top: 12px;
+        font-size: 2rem;
     }
 
     input[type=checkbox]:checked~.menu {
@@ -154,7 +161,7 @@ input[type=checkbox] {
 }
 
 .cont .text strong {
-    background-color: rgb(27, 217, 27);
+    background-color: rgb(95, 154, 95);
 }
 
 .cont .text p {

@@ -14,6 +14,13 @@
 </head>
 
 <body>
+    
+    <div class="video"> 
+    <video autoplay muted loop id="video">
+        <source onclick="play1()" src="./image/video.mp4"type="videos/mp4">
+    </video>
+    </div>
+    
 
     <nav class="navbar">
         <!-- LOGO -->
@@ -207,7 +214,7 @@
 
              <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
                 <div class="portfolio_box">
-                    <a href="templete1/index.html" target="_blank"> <img src="./image/architect.jpg" alt="">
+                    <a href="https://ravik655.github.io/architect/" target="_blank"> <img src="./image/architect.jpg" alt="">
                         <div class="portfolio_layer">
                             <h4>BR Architects</h4>
                             <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque
@@ -241,7 +248,7 @@
             <!-- </div> -->
            <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
                 <div class="portfolio_box">
-                    <a href="mobirise/index.html" target="_blank"><img src="./image/sl7.jpg" alt="">
+                    <a href="https://ravik655.github.io/mobirise/" target="_blank"><img src="./image/sl7.jpg" alt="">
                         <div class="portfolio_layer">
                             <h4>Floral Studio</h4>
                             <p>We offer a variety of floral services, from unique bouquets to event decoration.</p>
@@ -252,7 +259,7 @@
 
             <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                 <div class="portfolio_box">
-                    <a href="my blog/index.html"><img src="./image/avatar_g.jpg" alt="">
+                    <a href="https://ravik655.github.io/blog/"><img src="./image/avatar_g.jpg" alt="">
                         <div class="portfolio_layer">
                             <h4>MY BLOG</h4>
                             <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id
@@ -358,6 +365,15 @@
 
 
         }
+          let video=document.querySelector("image")
+        function play1() {
+           if(videos.paused){
+            video.play();
+
+        }
+
+        }
+
 
 
     </script>
