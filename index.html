@@ -14,20 +14,21 @@
 </head>
 
 <body>
-    
-    <div class="video"> 
-    <video autoplay muted loop id="video">
-        <source onclick="play1()" src="./image/video.mp4"type="videos/mp4">
-    </video>
-    </div>
-    
+
+    <!-- <div class="video">
+        <video autoplay muted loop id="video">
+            <source src="./image/video3.mp4" type="videos">
+            <button id="myBtn" onclick="myFunction()">Pause</button>
+        </video>
+    </div> -->
+
 
     <nav class="navbar">
         <!-- LOGO -->
         <div class="logo"><img src="./image/logo.png" height="50px" width="50px" alt="">
             <div class="detail">
-            <p><i class="fa-solid fa-phone"></i> Email id:-araviks655@gmail.com</p>
-            <p><i class="fa-solid fa-envelope"></i> Phone no.:-9355750655</p>
+                <p><i class="fa-solid fa-phone"></i> Email id:-araviks655@gmail.com</p>
+                <p><i class="fa-solid fa-envelope"></i> Phone no.:-9355750655</p>
             </div>
         </div>
         <!-- NAVIGATION MENU -->
@@ -51,7 +52,7 @@
 
 
 
- <div id="container" class="cont">
+    <div id="container" class="cont">
         <div class="text">
             <div data-aos="fade-down-right">
                 <p>Hello...it's Me</p>
@@ -100,7 +101,7 @@
 
 
 
- 
+
 
 
     <section class="About" id="About">
@@ -183,17 +184,17 @@
                 </div>
             </div>
 
-            
-            
+
+
             <div data-aos="flip-left">
-                    <div class="service_box">
-                        <i class="fa-solid fa-code"></i>
-                        <h3>JAVASCRIPT</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p><br>
-                        <a href="" class="btn">Read More</a>
-                    </div>
+                <div class="service_box">
+                    <i class="fa-solid fa-code"></i>
+                    <h3>JAVASCRIPT</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p><br>
+                    <a href="" class="btn">Read More</a>
                 </div>
-        
+            </div>
+
         </div>
     </section>
 
@@ -212,9 +213,10 @@
                 </div>
             </div>
 
-             <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+            <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
                 <div class="portfolio_box">
-                    <a href="https://ravik655.github.io/architect/" target="_blank"> <img src="./image/architect.jpg" alt="">
+                    <a href="https://ravik655.github.io/architect/" target="_blank"> <img src="./image/architect.jpg"
+                            alt="">
                         <div class="portfolio_layer">
                             <h4>BR Architects</h4>
                             <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque
@@ -235,18 +237,18 @@
                 </div>
             </div>
             <!-- <div data-aos="fade-right" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500"> -->
-                <div class="portfolio_box">
-                    <a href="https://ravik655.github.io/fashion_blo/" target="_blank"><img src="./image/jane.jpg" alt="">
-                        <div class="portfolio_layer">
-                            <h4>FASHION BLOG</h4>
-                            <p>Just me, myself and I have a heart of love and a
-                                interest of lorem ipsum and mauris neque quam blog. I want to share my world with you.
-                            </p>
-                        </div>
-                    </a>
-                </div>
+            <div class="portfolio_box">
+                <a href="https://ravik655.github.io/fashion_blo/" target="_blank"><img src="./image/jane.jpg" alt="">
+                    <div class="portfolio_layer">
+                        <h4>FASHION BLOG</h4>
+                        <p>Just me, myself and I have a heart of love and a
+                            interest of lorem ipsum and mauris neque quam blog. I want to share my world with you.
+                        </p>
+                    </div>
+                </a>
+            </div>
             <!-- </div> -->
-           <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
+            <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
                 <div class="portfolio_box">
                     <a href="https://ravik655.github.io/mobirise/" target="_blank"><img src="./image/sl7.jpg" alt="">
                         <div class="portfolio_layer">
@@ -277,8 +279,7 @@
         <h2>Contact <span>Me!</span></h2>
         <form action="#" class="form">
             <!-- <div data-aos="fade-up" data-aos-anchor-placement="center-center"> -->
-                <div data-aos="fade-up"
-     data-aos-anchor-placement="center-center">
+            <div data-aos="fade-up" data-aos-anchor-placement="center-center">
 
                 <div class="contact_container">
                     <div class="contact_box">
@@ -292,9 +293,8 @@
                     <div class="contact_box">
                         <textarea name="" id="textarea" cols="100" rows="10" placeholder="write message"
                             style=" background-color:rgb(166, 164, 164);"></textarea>
-                        <!-- <input type="text" name="" id="mess" placeholder=" write message"> -->
                     </div>
-                    <br>
+
                     <input type="submit" class="btn">
                 </div>
             </div>
@@ -365,13 +365,17 @@
 
 
         }
-          let video=document.querySelector("image")
-        function play1() {
-           if(videos.paused){
-            video.play();
+        var video = document.getElementById("videos");
+        var btn = document.getElementById("myBtn");
 
-        }
-
+        function myfunction() {
+            if (video.paused) {
+                video.play();
+                btn.innerHTML = "Pause";
+            } else {
+                video.pause();
+                btn.innerHTML = "Play";
+            }
         }
 
 

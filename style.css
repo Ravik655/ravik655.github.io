@@ -8,18 +8,12 @@
     border: none;
 }
 
+  
+  body {
+background-image:linear-gradient(rgb(128, 181, 128), rgb(48, 48, 37));
+ 
 
-body {
-    background: url(./image/video.mp4);
-    background-size: cover;
-
-}
-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-    
+}   
 
 a {
     text-decoration: none;
@@ -703,7 +697,9 @@ input[type=checkbox] {
     #textarea{
         width:70%;
     }
-
+    .service{
+        margin-top:8rem;
+    }
 
 
 
@@ -755,6 +751,9 @@ input[type=checkbox] {
     .contact_box{
         width: 100%;
     }
+    .cont .text{
+        margin-bottom: 6rem;
+    }
 
 
 
@@ -797,11 +796,13 @@ input[type=checkbox] {
     .section {
         display: none;
 
+
     }
 
     .service h2 {
         font-size: 1.6rem;
     }
+    
 
 
     .Portfolio h3 {
