@@ -120,7 +120,7 @@ input[type=checkbox] {
     }
 }
 .backimg{
-    background-image: url(./image/about_me_pic2.jpg);
+    background-image: url(./image/3.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -281,26 +281,77 @@ input[type=checkbox] {
     background: transparent;
     backdrop-filter: blur(8px);
 }
+.portfolio_layer .squar {
+    height: 200px;
+    width: 50px;
+    border: 3px solid white;
+    position: relative;
+    background: transparent;
+    backdrop-filter: blur(8px);
+}
 
 
 
 
 
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+}
 
-#service_container .service_box {
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+.service_box, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .service_box {
+      background-color: #bbb;
+      color: black;
+    }
+    
+    .flip-card-back {
+        background-color: #2980b9;
+        color: white;
+        transform: rotateY(180deg);
+    }
+    
+    #service_container .service_box {
     padding: 2rem 2rem 4rem;
     border-radius:10rem;
-    box-shadow: 0.1rem .5rem rgb(102, 245, 109);
+    /* box-shadow: 0.1rem .5rem rgb(102, 245, 109); */
     background-color: rgb(245, 241, 241);
     text-align: center;
     border-top: .6rem solid rgb(102, 245, 131);
     border-bottom: .6rem solid rgb(102, 245, 176);
-    transition: .5s ease;
+    /* transition: .5s ease; */
+    transition: transform 0.6s;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transform-style: preserve-3d;
 
 }
 
 #service_container .service_box:hover {
     transform: scale(1.02);
+    transform: rotateY(180deg);
     border-bottom: 1.2rem solid rgb(102, 245, 123);
 }
 
@@ -584,100 +635,100 @@ input[type=checkbox] {
 
 @media (max-width:650px) {
 
-     #service_container{
-         flex-direction: column;
-
-        }
-         .About {
+    #service_container{
         flex-direction: column;
-        margin-top:20rem;
-        text-align: center;
-        margin-bottom:25rem;
-    }
-    .midimg img{
-        height: 250px;
-        width: 250px;
-        /* margin-right: 10px; */
-    }
-    .portfolio_container {
-        grid-template-columns: auto;
 
-    }
+       }
 
-    #service_container {
-        flex-direction: column;
-    }
-    .section {
-        display: none;
-    }
-    .contact_box{
-        width: 100%;
-    }
-    .cont .text{
-        margin-bottom: 6rem;
-    }
-     #container {
-        margin-top: 3rem;
-    }
-    #textarea{
-        width:70%;
-    }
-  
-    .service h2 {
-        font-size:1.8rem;
-    }
-    .service_box{
-        width: 100%;
-    }
-    .footer_box {
-        flex-direction: column;
-        width: 100%;
-        gap: 2rem;
-        text-align: center;
-    }
+        .About {
+       flex-direction: column;
+       margin-top:20rem;
+       text-align: center;
+       margin-bottom:25rem;
+   }
+   .midimg img{
+       height: 250px;
+       width: 250px;
+       /* margin-right: 10px; */
+   }
+   .portfolio_container {
+       grid-template-columns: auto;
 
-    
-    .portfolio_layer .squar{
-        height:200px;
-        width:200px;
-        border:3px solid white;
-        position: relative;
-        background: transparent;
-        backdrop-filter: blur(8px);
-    
+   }
+
+   #service_container {
+       flex-direction: column;
+   }
+   .section {
+       display: none;
+   }
+   .contact_box{
+       width: 100%;
+   }
+   .cont .text{
+       margin-bottom: 6rem;
+   }
+    #container {
+       margin-top: 3rem;
+   }
+   #textarea{
+       width:70%;
+   }
+ 
+   .service h2 {
+       font-size:1.8rem;
+   }
+   .service_box{
+       width: 100%;
+   }
+   .footer_box {
+       flex-direction: column;
+       width: 100%;
+       gap: 2rem;
+       text-align: center;
+   }
+
+   
+   .portfolio_layer .squar{
+       height:250px;
+       width:200px;
+       border:3px solid white;
+       position: relative;
+       background: transparent;
+       backdrop-filter: blur(8px);
+   
+      
+   
+   }
+   .portfolio_layer h4 {
+       position:absolute;
+       margin-bottom:12rem;
+       color: aqua;
+       margin-left:3rem;
+       font-size:1rem;
+   
+   }
+   
+   .portfolio_layer p {
+       font-size: 1rem;
+       margin: .3rem 0 1rem;
+       position: absolute;
+       width:150px; 
+       margin: auto;
+       color: black;
+       text-align: center;
        
-    
-    }
-    .portfolio_layer h4 {
-        position:absolute;
-        margin-bottom:12rem;
-        color: aqua;
-        margin-left:3rem;
-        font-size:1rem;
-    
-    }
-    
-    .portfolio_layer p {
-        font-size: 1rem;
-        margin: .3rem 0 1rem;
-        position: absolute;
-        width:150px; 
-        margin: auto;
-        color: black;
-        text-align: center;
-        
-    }
-    .Portfolio {
-        /* margin: 5rem 6rem; */
-        min-height:90%;
-        margin: auto;
-    }
+   }
+   .Portfolio {
+       /* margin: 5rem 6rem; */
+       min-height:90%;
+       margin: auto;
+   }
 
-       
-    
+      
+   
 
 }
-
 
 @media only screen and (min-width:651px) and (max-width:1000px) {
     .cont {
@@ -785,8 +836,10 @@ input[type=checkbox] {
         width:100%;
     }
     .About p{
+        width: 100%;
         font-size: 1rem;
-        /* letter-spacing: 2px; */
+        line-height:1.2;
+    
     }
     .About_img  img{
         height:440px;
