@@ -120,7 +120,7 @@ input[type=checkbox] {
     }
 }
 .backimg{
-    background-image: url(./image/3.jpg);
+    background-image: url(./image/h1_hero1.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -738,6 +738,10 @@ input[type=checkbox] {
     .portfolio_container {
         grid-template-columns: auto auto;
     }
+    .portfolio_box img{
+        height: 400px;
+    
+    }
 
     #service_container {
         flex-direction: column;
@@ -883,6 +887,9 @@ input[type=checkbox] {
         /* margin: 5rem 6rem; */
         min-height:90%;
         margin: auto;
+    }
+    .portfolio_box img {
+        height: 500px;
     }
 
     
