@@ -164,6 +164,13 @@ input[type=checkbox] {
     font-size:2.3rem;
     font-weight: 300;
 }
+.text button{
+    height:60px;
+    width:300px;
+    font-size:30px;
+    background-image: linear-gradient(green,yellow);
+    margin-top: 1rem;
+}
 
 
 
