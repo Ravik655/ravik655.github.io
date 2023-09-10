@@ -246,7 +246,7 @@ input[type=checkbox] {
 }
 
 .midimg {
-    width: 100%;
+    /* width: 100%; */
     margin: auto;
 }
 
@@ -278,8 +278,13 @@ input[type=checkbox] {
 }
 
 #service_container {
-    display: flex;
-    justify-content: center;
+    background-image: url(./image/5.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:grid;
+    /* justify-content: center; */
+    grid-template-columns: auto auto auto auto auto ;
     /* grid-template-columns: repeat(3, 1fr); */
     align-items: center;
     gap: 2rem;
@@ -349,12 +354,13 @@ input[type=checkbox] {
     background-color: #2980b9;
     color: white;
     transform: rotateY(180deg);
+    border-radius: 50%;
 }
 
 #service_container .service_box {
-    padding: 2rem 2rem 4rem;
+    padding: 0rem 2rem 4rem;
     border-radius: 10rem;
-    /* box-shadow: 0.1rem .5rem rgb(102, 245, 109); */
+    box-shadow: 0.1rem .5rem rgb(102, 245, 109);
     background-color: rgb(245, 241, 241);
     text-align: center;
     border-top: .6rem solid rgb(102, 245, 131);
@@ -384,6 +390,7 @@ input[type=checkbox] {
     line-height: 3;
     font-weight: 300;
     transition: .5 ease;
+    color: white;
 }
 
 
@@ -397,28 +404,26 @@ input[type=checkbox] {
     color: rgba(9, 9, 9, 0.913);
 }
 
-.service_box .btn {
+ .btn {
     border: 1px solid rgb(0, 255, 132);
-    padding: 10px 15px;
-    margin-top: 2rem;
     color: white;
     transition: 0.3s;
     font-size: 1.3rem;
-    top: 20px;
-    /* background:linear-gradient(green yellow); */
-    background-color: green;
+    padding: 10px 20px;
+    top:40px;
+    background:linear-gradient(green, yellow);
+    /* background-color: green; */
 }
 
-.btn {
+.service_btn {
     border: 1px solid rgb(0, 255, 132);
-    padding: 10px 15px;
-    margin-top: 2rem;
+    margin-top:2rem;
     color: white;
     transition: 0.3s;
     font-size: 1.3rem;
-    top: 20px;
-    /* background:linear-gradient(green yellow); */
-    background-color: green;
+    /* top:50px; */
+    background:linear-gradient(green yellow);
+    /* background-color: green; */
 
 }
 
@@ -648,13 +653,122 @@ input[type=checkbox] {
     text-align: center;
     margin-top: 2rem;
 }
+@media screen and (max-width:449px) {
+    #service_container {
+        grid-template-columns: auto;
+        text-align: center;
+
+    }
+
+    .About {
+        flex-direction: column;
+        margin-top: 20rem;
+        text-align: center;
+        margin-bottom: 25rem;
+    }
+
+    .midimg img {
+        /* height: 250px; */
+        width: 250px;
+        /* margin-right: 10px; */
+    }
+
+    .portfolio_container {
+        grid-template-columns: auto;
+
+    }
+    .service{
+        margin-top: 29rem;
+    }
+
+
+    .section {
+        display: none;
+    }
+
+    .contact_box {
+        width: 100%;
+    }
+
+    .cont .text {
+        margin-bottom: 6rem;
+    }
+
+    #container {
+        margin-top: 3rem;
+    }
+
+    #textarea {
+        width: 70%;
+    }
+
+    .service h2 {
+        font-size: 1.8rem;
+    }
+
+    .service_box {
+        width: 100%;
+    }
+
+    .footer_box {
+        flex-direction: column;
+        width: 100%;
+        gap: 2rem;
+        text-align: center;
+    }
+
+
+    .portfolio_layer .squar {
+        height: 250px;
+        width: 200px;
+        border: 3px solid white;
+        position: relative;
+        background: transparent;
+        backdrop-filter: blur(8px);
 
 
 
-@media (max-width:650px) {
+    }
+    
+
+    .portfolio_layer h4 {
+        position: absolute;
+        margin-bottom:7.2rem;
+        color: rgb(22, 22, 22);
+        margin-left:3rem;
+        font-size: 20px;
+
+    }
+
+    .portfolio_layer p {
+        font-size: 1rem;
+        margin: .6rem 0 1rem;
+        position: absolute;
+        width: 150px;
+        margin: auto;
+        color: black;
+        margin-left:1rem;
+        
+
+    }
+
+    .Portfolio {
+        /* margin: 5rem 6rem; */
+        min-height: 90%;
+        margin: auto;
+    }
+    
+    
+}
+
+
+
+
+@media only screen and (min-width:450px) and (max-width:650px) {
 
     #service_container {
-        flex-direction: column;
+        grid-template-columns: auto ;
+        text-align: center;
 
     }
 
@@ -730,13 +844,16 @@ input[type=checkbox] {
 
 
     }
+    .squar{
+        margin-left: 9rem;
+    }
 
     .portfolio_layer h4 {
         position: absolute;
         margin-bottom: 12rem;
         color: aqua;
-        margin-left: 3rem;
-        font-size: 1rem;
+        margin-left:12rem;
+        font-size: 1.3rem;
 
     }
 
@@ -747,7 +864,8 @@ input[type=checkbox] {
         width: 150px;
         margin: auto;
         color: black;
-        text-align: center;
+        margin-left:10rem;
+        
 
     }
 
@@ -755,6 +873,9 @@ input[type=checkbox] {
         /* margin: 5rem 6rem; */
         min-height: 90%;
         margin: auto;
+    }
+    .flip-card-inner{
+        margin-left:110px;
     }
 
 
@@ -777,7 +898,8 @@ input[type=checkbox] {
     }
 
     #service_container {
-        flex-direction: column;
+        grid-template-columns: auto auto ;
+        text-align: center;
 
     }
 
@@ -844,7 +966,7 @@ input[type=checkbox] {
 
 }
 
-@media only screen and (min-width:1001px) and (max-width:1427px) {
+@media only screen and (min-width:1001px) and (max-width:1250px) {
     .section {
         display: none;
 
@@ -859,6 +981,111 @@ input[type=checkbox] {
         justify-content: center;
     }
 
+    .section {
+        top: 0%;
+        transform: rotate(0deg);
+        height: 850px;
+
+    }
+
+    .text {
+        text-align: center;
+        /* margin-right: 10rem; */
+    }
+
+    .midimg img {
+        /* height: 400px; */
+        width: 300px;
+    }
+
+    .About_img {
+        width: 100%;
+    }
+
+    .About p {
+        width: 100%;
+        font-size: 1rem;
+        line-height: 1.2;
+
+    }
+
+    .About_img img {
+        height: 440px;
+        width: 50%;
+    }
+
+    .about_box {
+        width: 98%;
+        margin: auto;
+    }
+
+    .portfolio_layer .squar {
+        height: 250px;
+        width: 200px;
+        border: 3px solid white;
+        position: relative;
+        background: transparent;
+        backdrop-filter: blur(8px);
+
+    }
+
+
+
+    .portfolio_layer h4 {
+        position: absolute;
+        margin-bottom: 12rem;
+        color: aqua;
+        margin-left: 3rem;
+        font-size: 1rem;
+
+    }
+
+    .portfolio_layer p {
+        font-size: 1rem;
+        margin: .3rem 0 1rem;
+        position: absolute;
+        width: 190px;
+        margin: auto;
+        color: black;
+        text-align: center;
+
+    }
+
+    .Portfolio {
+        /* margin: 5rem 6rem; */
+        min-height: 90%;
+        margin: auto;
+    }
+
+    .portfolio_box img {
+        height: 500px;
+    }
+    #service_container {
+        grid-template-columns: auto auto auto ;
+        text-align: center;
+
+    }
+    .flip-card-back {
+        background-color: #2980b9;
+        color: white;
+        transform: rotateY(180deg);
+        border-radius: 50%;
+    }
+}
+@media only screen and (min-width:1251px)and (max-width:1427px){
+    .section {
+        display: none;
+
+    }
+
+    .About {
+        margin-top: 2rem;
+        gap: 2rem;
+    }
+
+    .cont {
+        justify-content: center;
+    }
 
     .section {
         top: 0%;
@@ -873,9 +1100,10 @@ input[type=checkbox] {
     }
 
     .midimg img {
-        height: 400px;
+        /* height: 400px; */
         width: 300px;
     }
+    
 
     .About_img {
         width: 100%;
@@ -939,12 +1167,18 @@ input[type=checkbox] {
     .portfolio_box img {
         height: 500px;
     }
+    #service_container {
+        grid-template-columns: auto auto auto ;
+        text-align: center;
 
-
-
-
-
-
+    }
+    .flip-card-back {
+        background-color: #2980b9;
+        color: white;
+        transform: rotateY(180deg);
+        border-radius: 50%;
+    }
+    
 }
 
 
@@ -956,13 +1190,17 @@ input[type=checkbox] {
         height: 500px;
     }
 
+    .portfolio-warp {
+        position: relative;
+        display: block;
+        overflow: hidden;
+    }
+    #service_container {
+        grid-template-columns: auto auto auto  auto;
+        text-align: center;
+
+    }
 }
 
 
 
-
-.portfolio-warp {
-    position: relative;
-    display: block;
-    overflow: hidden;
-}
