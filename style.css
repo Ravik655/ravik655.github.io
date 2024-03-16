@@ -204,7 +204,6 @@ input[type=checkbox] {
     max-width: 90%;
     margin: auto;
     text-align: center;
-    /* margin-top:5rem; */
     height: 500px;
 
 
@@ -240,6 +239,7 @@ input[type=checkbox] {
 
 
 .per {
+    /* margin-top:5rem; */
     width: 100%;
     line-height: 2;
 
@@ -263,7 +263,7 @@ input[type=checkbox] {
 
 .service {
     min-height: auto;
-    margin-top: 2rem;
+    margin-top: rem;
 }
 
 .service h2 {
@@ -654,6 +654,9 @@ input[type=checkbox] {
     text-align: center;
     margin-top: 2rem;
 }
+
+
+
 @media screen and (max-width:449px) {
     #service_container {
         grid-template-columns: auto;
@@ -663,15 +666,14 @@ input[type=checkbox] {
 
     .About {
         flex-direction: column;
-        margin-top: 20rem;
+        margin-top: 35rem;
         text-align: center;
         margin-bottom: 25rem;
     }
 
-    .midimg img {
-        /* height: 250px; */
+    .midimg img { 
         width: 250px;
-        /* margin-right: 10px; */
+       
     }
 
     .portfolio_container {
@@ -679,7 +681,7 @@ input[type=checkbox] {
 
     }
     .service{
-        margin-top: 29rem;
+        margin-top: 39rem;
     }
 
 
@@ -775,24 +777,32 @@ input[type=checkbox] {
 
     .About {
         flex-direction: column;
-        margin-top: 20rem;
+        margin-top: 27rem;
         text-align: center;
-        margin-bottom: 25rem;
+       
     }
+   
+        
+    
 
     .midimg img {
         height: 250px;
         width: 250px;
         /* margin-right: 10px; */
     }
+    .miding .heading{
+        margin-top: 2rem;
+       
+    }
 
     .portfolio_container {
         grid-template-columns: auto;
 
     }
-    .service{
-        margin-top: 29rem;
-    }
+   .service{
+    height: auto;
+    margin-top: 30rem;
+   }
 
     #service_container {
         flex-direction: column;
@@ -904,14 +914,22 @@ input[type=checkbox] {
 
     .About {
         flex-direction: column;
-        margin-top: 20rem;
+        margin-top: 27rem;
         text-align: center;
-        margin-bottom: 25rem;
+        
     }
 
 
     .section {
         display: none;
+    }
+
+
+    .per {
+        margin-top:5rem;
+        width: 100%;
+        line-height: 2;
+    
     }
 
 
