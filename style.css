@@ -4,6 +4,7 @@
     list-style: none;
     text-decoration: none;
     box-sizing: border-box;
+    width: auto;
 }
 
 
@@ -121,7 +122,7 @@ input[type=checkbox] {
     }
 }
 
-.backimg {
+.background {
     background-image: url(./image/h1_hero1.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -168,8 +169,8 @@ input[type=checkbox] {
 }
 
 .text button {
-    height: 60px;
-    width: 300px;
+    height: auto;
+    width:auto;
     font-size: 30px;
     background-image: linear-gradient(green, yellow);
     margin-top: 1rem;
@@ -193,7 +194,7 @@ input[type=checkbox] {
     font-size: 2rem;
     font-weight: 700;
     line-height: 4;
-    margin-top: 50px;
+    /* margin-top: 50px; */
 }
 
 
@@ -238,7 +239,7 @@ input[type=checkbox] {
 
 
 
-.per {
+.skills {
     /* margin-top:5rem; */
     width: 100%;
     line-height: 2;
@@ -251,7 +252,7 @@ input[type=checkbox] {
 }
 
 
-.pers {
+.skill {
     border-radius: 10px;
     width: 90%;
     height: 20px;
@@ -891,7 +892,7 @@ input[type=checkbox] {
 
 }
 
-@media only screen and (min-width:651px) and (max-width:1000px) {
+@media only screen and (min-width:650px) and (max-width:1000px) {
     .cont {
         justify-content: center;
     }
@@ -925,9 +926,9 @@ input[type=checkbox] {
     }
 
 
-    .per {
-        margin-top:5rem;
-        width: 100%;
+    .skill {
+        /* margin-top:5rem; */
+        /* width: 100%; */
         line-height: 2;
     
     }
